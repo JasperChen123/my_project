@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的个人主页</title>
+  <!-- 外部样式 -->
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: "微软雅黑", sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: darkgreen;
+    }
+    p {
+      padding: 0 20px;
+      font-size: 16px;
+    }
+    .highlight {
+      color: #d2691e;
+      font-weight: bold;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+    table, th, td {
+      border: 1px solid #555;
+      text-align: center;
+      padding: 10px;
+    }
+    audio {
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      alert("欢迎您回来");
+    }
+  </script>
+</head>
+<body>
+<h1>我的个人主页</h1>
+
+<p>
+  大一这一年，我在<strong class="highlight">浙江农林大学</strong>度过了充实又有挑战的一年。我积极参与了班级活动，<span class="highlight">加入学生会</span>，锻炼了沟通与组织能力。在学习方面，我努力掌握专业知识，<strong style="color: blue;">成绩优异</strong>，多门课程取得优秀。
+</p>
+
+<p>
+  课余时间，我参加了编程社团，<strong class="highlight">提升了Java与前端开发能力</strong>。此外我还尝试拍摄校园视频、剪辑素材，提升了自己的综合能力。<span style="color: green; font-weight: bold;">这一年让我成长了很多</span>，也更加坚定了目标。
+</p>
+
+<!-- 插入图片 -->
+<div style="text-align: center;">
+  <img src="myphoto.jpg" alt="我的照片" width="200" height="250">
+</div>
+
+<!-- 背景音乐 -->
+<audio controls autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  您的浏览器不支持 audio 元素。
+</audio>
+
+<!-- 兴趣爱好表格 -->
+<table>
+  <tr>
+    <th>项目1</th>
+    <th>项目2</th>
+    <th>项目3</th>
+    <th>项目4</th>
+    <th>项目5</th>
+  </tr>
+  <tr>
+    <td>摄影</td>
+    <td>编程</td>
+    <td>写作</td>
+    <td rowspan="2" colspan="2">
+      <img src="myphoto.jpg" width="100" height="120" alt="个人照片">
+    </td>
+  </tr>
+  <tr>
+    <td>视频剪辑</td>
+    <td>打羽毛球</td>
+    <td>听音乐</td>
+  </tr>
+  <tr>
+    <td>Python学习</td>
+    <td>网站开发</td>
+    <td>AI探索</td>
+    <td>志愿服务</td>
+    <td>图书馆阅读</td>
+  </tr>
+  <tr>
+    <td>课程：生态学</td>
+    <td>课程：高等数学</td>
+    <td>课程：C语言</td>
+    <td>课程：马原</td>
+    <td>课程：电工技术</td>
+  </tr>
+</table>
+</body>
+</html>
